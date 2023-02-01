@@ -18,7 +18,6 @@ passport.use(
         user_id: profile.id,
         picture: profile.picture,
       };
-      console.log(user)
       let isRegd = await UserModel.findOne({ email: profile.email });
       if (isRegd) {
       } else {
